@@ -1,0 +1,32 @@
+.LettersCard {
+  display: inline-block;
+  cursor: pointer;
+
+  .card-thumbnail {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    .letters{
+      position: absolute;
+      top: 55px;
+      font-size: 40px;
+
+      &.a {
+        left: 15px;
+        color: crimson;
+      }
+
+      &.b {
+        left: 50%;
+        transform: translate(-50%);
+        color: darkmagenta;
+      }
+
+      &.c {
+        right: 15px;
+        color: greenyellow;
+      }
+    }
+  }
+}

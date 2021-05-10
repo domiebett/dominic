@@ -6,6 +6,7 @@ import './App.css';
 import AppConfig from './components/config/AppConfig';
 import GamesDashboard from './components/dashboards/games/GamesDashboard';
 import SongsDashboard from './components/dashboards/songs/SongsDashboard';
+import LettersGame from './components/games/letters/lettersGame';
 import SelectTheShape from './components/games/selectTheShape/SelectTheShape';
 import ShapesGame from './components/games/shapesGame/ShapesGame';
 import Home from './components/home/Home';
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/games" component={GamesDashboard}></Route>
           <Route exact path="/games/shapes" component={ShapesGame}></Route>
           <Route exact path="/games/select-the-shape" component={SelectTheShape}></Route>
+          <Route exact path="/games/letters" component={LettersGame}></Route>
 
           {/* songs */}
           <Route exact path="/songs" component={SongsDashboard}></Route>
