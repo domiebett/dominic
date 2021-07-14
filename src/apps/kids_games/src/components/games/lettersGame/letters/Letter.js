@@ -7,6 +7,7 @@ class Letter extends React.Component {
 
     return (
       <div className={`Shape ${letter.small} ${this.props.index === this.props.activeIndex ? 'active': ''}`}>
+        {letter.small}
       </div>
     )
   }

@@ -14,12 +14,37 @@ class LettersGame extends React.Component {
       currentColor: getRandomColor()
     }
   }
+
   goToNextLetter(e) {
-    console.log('next letter');
+    e.preventDefault()
+
+    let index = this.state.activeIndex;
+    if (index >= (lettersData.length -1)) {
+      index = 0;
+    } else {
+      index++;
+    }
+
+    this.setState({
+      activeIndex: index,
+      currentColor: getRandomColor()
+    });
   }
 
-  goToPreviousLetter(e) {
-    console.log('previous letter');
+  goToPreviousLetter(e) {    
+    e.preventDefault();
+
+    let index = this.state.activeIndex;
+    if (index < 1) {
+      index = lettersData.length - 1;
+    } else {
+      index--;
+    }
+
+    this.setState({
+      activeIndex: index,
+      currentColor: getRandomColor()
+    })
   }
 
   render() {
