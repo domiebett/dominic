@@ -6,7 +6,7 @@ import './App.css';
 import AppConfig from './components/config/AppConfig';
 import GamesDashboard from './components/dashboards/games/GamesDashboard';
 import SongsDashboard from './components/dashboards/songs/SongsDashboard';
-import LettersGame from './components/games/letters/lettersGame';
+import LettersGame from './components/games/lettersGame/lettersGame';
 import SelectTheShape from './components/games/selectTheShape/SelectTheShape';
 import ShapesGame from './components/games/shapesGame/ShapesGame';
 import Home from './components/home/Home';
