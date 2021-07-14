@@ -4,6 +4,7 @@ import RightArrow from '../../shared/arrows/RightArrow';
 import { lettersData } from '../../../data/LettersData';
 import Letter from './letters/Letter';
 import { getRandomColor } from '../../../utils/Color';
+import './LettersGame.scss';
 
 class LettersGame extends React.Component {
   constructor(props) {
